@@ -14,7 +14,7 @@ def get_qq_list():
 
 
 def main(qq_list):
-    pkg = rdpcap('/home/gavin/QQBG.pcap')
+    pkg = rdpcap('/home/gavin/NetWorkAna/pcap_package/02.pcap')
     for p in pkg:
         # if p[]
         if p.sprintf('%Ether.src%') == '78:0c:b8:37:06:86':
@@ -126,7 +126,6 @@ if __name__ == '__main__':
         if qq_classmate.get(qq_num, False):
             print(qq_num+':'+qq_classmate[qq_num]+"; Ip地址:"+qq_info[1]+"; mac地址-->"+qq_info[2]+'; '+qq_info[3])
         else:
-            # print(qq_num + ':' + "; Ip地址:" + qq_info[1] + "; mac地址-->" + qq_info[2] + '; ' +qq_info[3])
             print(qq_num)
 
 
